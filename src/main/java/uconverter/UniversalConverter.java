@@ -10,8 +10,12 @@ public class UniversalConverter {
     private List<UnitConverter> converters = Arrays.asList (
             new CelsiusUnitConverter(),      //index 0
             new FahrenheitUnitConverter(),   //index 1
-            new KelvinUnitConverter()        //index 2
+            new KelvinUnitConverter(),        //index 2
+            new MetreUnitConverter(),
+            new InchUnitConverter(),
+            new FootUnitConverter()
     );
+
     private UnitConverter sourceConverter;
     private UnitConverter targetConverter;
 
