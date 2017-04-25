@@ -13,7 +13,11 @@ public class UniversalConverter {
             new KelvinUnitConverter(),        //index 2
             new MetreUnitConverter(),
             new InchUnitConverter(),
-            new FootUnitConverter()
+            new FootUnitConverter(),
+            new KilogramUnitConverter(),
+            new PoundUnitConverter(),
+            new OunceUnitConverter()
+
     );
 
     private UnitConverter sourceConverter;
