@@ -10,7 +10,7 @@ public class InchUnitConverter extends UnitConverter {
 
     @Override
     public String getName() {
-        return "Inches";
+        return "Inch";
     }
 
 }

@@ -41,6 +41,10 @@ public class UniversalConverter {
 
     @Command
     public double convert(double value) {
+        if (sourceConverter == null || targetConverter == null) {
+            System.out.println("Error! Something is missing...");
+            throw new IllegalStateException("sourse or target converter is not set!");
+        }
         double siValue = sourceConverter.toSI(value);
         double targetValue = targetConverter.fromSI(siValue);
         return targetValue;
