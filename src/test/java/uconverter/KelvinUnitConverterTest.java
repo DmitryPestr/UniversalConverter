@@ -17,8 +17,13 @@ import static org.junit.Assert.*;
 public class KelvinUnitConverterTest {
     KelvinUnitConverter converter = new KelvinUnitConverter();
 
+    @Parameterized.Parameter(0)
+    public double srcKelvin;
+    @Parameterized.Parameter(1)
+    public double trgKelvin;
+
     @Parameterized.Parameters
-    public Collection<Object[]> data() {
+    public static Collection<Object[]> data() {
         return Arrays.asList(new Object[][] {
                 {10.0, 10.0},
                 {100.0, 100.0},
@@ -28,12 +33,12 @@ public class KelvinUnitConverterTest {
 
     @Test
     public void toSI() throws Exception {
-        assertEquals(10, converter.toSI(10), 0.00001);
+        assertEquals(trgKelvin, converter.toSI(srcKelvin), 0.00001);
     }
 
     @Test
     public void fromSI() throws Exception {
-        assertEquals(10, converter.fromSI(10), 0.00001);
+        assertEquals(srcKelvin, converter.fromSI(trgKelvin), 0.00001);
     }
 
     @Test
