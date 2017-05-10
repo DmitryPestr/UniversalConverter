@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>  <!--standart stoka-->
+
+
+<?import javafx.scene.layout.GridPane?>
+<GridPane fx:controller="uconverter.ConverterController"
+          xmlns:fx="http://javafx.com/fxml"
+          alignment="center" hgap="10" vgap="10"
+          styleClass="root">
+
+
+</GridPane>
+
