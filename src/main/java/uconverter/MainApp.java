@@ -16,7 +16,7 @@ public class MainApp extends Application {
     public void start(Stage primaryStage) throws Exception {
         Parent root = FXMLLoader.load(getClass().getResource("/main_window.fxml"));
 
-        Scene scene = new Scene(root, 600, 275);
+        Scene scene = new Scene(root, 500, 275);
 
         primaryStage.setTitle("Converter");
         primaryStage.setScene(scene);

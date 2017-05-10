@@ -29,6 +29,10 @@ public class UniversalConverter {
         }                                                                // \n - perehod na novuju stroku
     }
 
+    public List<UnitConverter> getConverters() {
+        return converters;
+    }
+
     @Command
     public void source(int idx) {
         sourceConverter = converters.get(idx - 1);
