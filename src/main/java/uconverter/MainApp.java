@@ -17,6 +17,7 @@ public class MainApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/main_window.fxml"));
 
         Scene scene = new Scene(root, 500, 275);
+        root.setStyle("-fx-background-color: grey;-fx-padding: 10px;");
 
         primaryStage.setTitle("Converter");
         primaryStage.setScene(scene);
