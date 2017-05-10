@@ -28,9 +28,10 @@ public class ConverterController {
         UnitConverter src = srcUnit.getValue();
         UnitConverter trg = trgUnit.getValue();
 
+        double si = src.toSI(val);
+        double result = trg.fromSI(si);
 
-        trgValue.setText(Double.toString(val));
-
+        trgValue.setText(Double.toString(result));
     }
 }
 
